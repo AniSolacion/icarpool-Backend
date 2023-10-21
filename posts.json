@@ -114,10 +114,10 @@
         "id": 11,
         "userId": 1,
         "type": "Driver",
-        "startLocation": "Rexburg, ID",
+        "startLocation": "Springfield, IL",
         "startDate": "2023-11-05",
         "startTime": "T17:00",
-        "endLocation": "Helena, MT",
+        "endLocation": "Casper, WY",
         "seatsAvailable": 1,
         "createdAt": "2023-11-02T09:00"
       },
@@ -131,6 +131,137 @@
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
         "createdAt": "2023-11-09T03:00"
+      },
+      {"id": 13,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Pittsburg, PA",
+        "startDate": "2023-10-25",
+        "startTime": "T11:00",
+        "endLocation": "Dover, DE",
+        "seatsAvailable": 4,
+        "createdAt": "2023-10-24T13:00"
+      },
+      {
+        "id": 14,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Charleston, WV",
+        "startDate": "2023-11-05",
+        "startTime": "T17:00",
+        "endLocation": "Tallahassee, FL",
+        "seatsAvailable": 1,
+        "createdAt": "2023-11-02T09:00"
+      },
+      {
+        "id": 15,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Des Moines, IA",
+        "startDate": "2024-11-09",
+        "startTime": "T06:00",
+        "endLocation": "Springfield, IL",
+        "seatsAvailable": null,
+        "createdAt": "2024-11-09T03:00"
+      },
+      {
+        "id": 16,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Casper, WY",
+        "startDate": "2023-10-25",
+        "startTime": "T11:00",
+        "endLocation": "Lehi, UT",
+        "seatsAvailable": 4,
+        "createdAt": "2023-10-24T13:00"
+      },
+      {
+        "id": 17,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Huston, TX",
+        "startDate": "2023-12-30",
+        "startTime": "T17:00",
+        "endLocation": "Logan, UT",
+        "seatsAvailable": 1,
+        "createdAt": "2023-12-27T09:00"
+      },
+      {
+        "id": 18,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Cheyenne, WY",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
+        "endLocation": "Rexburg, ID",
+        "seatsAvailable": null,
+        "createdAt": "2023-11-09T03:00"
+      },
+      {
+        "id": 19,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Twin Falls, ID",
+        "startDate": "2023-11-29",
+        "startTime": "T11:00",
+        "endLocation": "Rexburg, ID",
+        "seatsAvailable": 4,
+        "createdAt": "2023-11-24T13:00"
+      },
+      {
+        "id": 20,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Las Vegas, NV",
+        "startDate": "2023-11-05",
+        "startTime": "T17:00",
+        "endLocation": "Tuscon, AZ",
+        "seatsAvailable": 1,
+        "createdAt": "2023-11-02T09:00"
+      },
+      {
+        "id": 21,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Helena, MT",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
+        "endLocation": "Bismarck, ND",
+        "seatsAvailable": null,
+        "createdAt": "2023-11-09T03:00"
+      },
+      {
+        "id": 22,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Seattle, WA",
+        "startDate": "2024-01-25",
+        "startTime": "T11:00",
+        "endLocation": "Spokane, WA",
+        "seatsAvailable": 4,
+        "createdAt": "2024-01-24T13:00"
+      },
+      {
+        "id": 23,
+        "userId": 2,
+        "type": "Driver",
+        "startLocation": "Lincoln, NE",
+        "startDate": "2023-11-05",
+        "startTime": "T17:00",
+        "endLocation": "New York, NY",
+        "seatsAvailable": 3,
+        "createdAt": "2023-11-02T09:00"
+      },
+      {
+        "id": 24,
+        "userId": 5,
+        "type": "Rider",
+        "startLocation": "San Francisco, CA",
+        "startDate": "2023-12-15",
+        "startTime": "T06:00",
+        "endLocation": "Reno, NV",
+        "seatsAvailable": null,
+        "createdAt": "2023-12-09T09:30"
       }
     ]
 }
