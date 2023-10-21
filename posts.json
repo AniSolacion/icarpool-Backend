@@ -32,6 +32,105 @@
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
         "createdAt": "Nov 4 2023, 3:00"
+      },
+      {
+        "id": 4,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Oct 25 2023",
+        "startTime": "11:00",
+        "endLocation": "Logan, UT",
+        "seatsAvailable": 4,
+        "createdAt": "Oct 24 2023, 13:00"
+      },
+      {
+        "id": 5,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Nov 5 2023",
+        "startTime": "17:00",
+        "endLocation": "Helena, MT",
+        "seatsAvailable": 1,
+        "createdAt": "Nov 2 2023, 9:00"
+      },
+      {
+        "id": 6,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Helena, MT",
+        "startDate": "Nov 9 2023",
+        "startTime": "6:00",
+        "endLocation": "Rexburg, ID",
+        "seatsAvailable": null,
+        "createdAt": "Nov 4 2023, 3:00"
+      },
+      {
+        "id": 7,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Oct 25 2023",
+        "startTime": "11:00",
+        "endLocation": "Logan, UT",
+        "seatsAvailable": 4,
+        "createdAt": "Oct 24 2023, 13:00"
+      },
+      {
+        "id": 8,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Nov 5 2023",
+        "startTime": "17:00",
+        "endLocation": "Helena, MT",
+        "seatsAvailable": 1,
+        "createdAt": "Nov 2 2023, 9:00"
+      },
+      {
+        "id": 9,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Helena, MT",
+        "startDate": "Nov 9 2023",
+        "startTime": "6:00",
+        "endLocation": "Rexburg, ID",
+        "seatsAvailable": null,
+        "createdAt": "Nov 4 2023, 3:00"
+      },
+      {
+        "id": 10,
+        "userId": 3,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Oct 25 2023",
+        "startTime": "11:00",
+        "endLocation": "Logan, UT",
+        "seatsAvailable": 4,
+        "createdAt": "Oct 24 2023, 13:00"
+      },
+      {
+        "id": 11,
+        "userId": 1,
+        "type": "Driver",
+        "startLocation": "Rexburg, ID",
+        "startDate": "Nov 5 2023",
+        "startTime": "17:00",
+        "endLocation": "Helena, MT",
+        "seatsAvailable": 1,
+        "createdAt": "Nov 2 2023, 9:00"
+      },
+      {
+        "id": 12,
+        "userId": 4,
+        "type": "Rider",
+        "startLocation": "Helena, MT",
+        "startDate": "Nov 9 2023",
+        "startTime": "6:00",
+        "endLocation": "Rexburg, ID",
+        "seatsAvailable": null,
+        "createdAt": "Nov 4 2023, 3:00"
       }
     ]
 }
