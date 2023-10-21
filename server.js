@@ -71,6 +71,7 @@ app.delete('/users/:id', (req, res) => {
     }
 });
 
+
 // Post APi's
 // Get all posts
 app.get('/posts', (req, res) => {
@@ -116,6 +117,22 @@ app.put('/posts/:id', (req, res) => {
     }
 });
 
+// Delete a specific post by ID
+app.delete('/posts/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
+    const postIndex = data.posts.findIndex(post => post.id === id);
+
+    if (postIndex !== -1) {
+        data.posts.splice(postIndex, 1);
+        fs.writeFileSync(postDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'Post deleted successfully' });
+    } else {
+        res.status(404).json({ error: 'Post not found' });
+    }
+});
+
+
 // Reservation API's
 // Get all reservations
 app.get('/reservations', (req, res) => {
@@ -132,7 +149,6 @@ app.post('/reservations', (req, res) => {
     fs.writeFileSync(reservationDataPath, JSON.stringify(data, null, 2), 'utf8');
     res.json(newReservation);
 });
-
 
 // Get a specific reservation by ID
 app.get('/reservations/:id', (req, res) => {
@@ -157,6 +173,21 @@ app.put('/reservations/:id', (req, res) => {
         data.reservations[reservationIndex] = { ...data.reservations[reservationIndex], ...req.body }; // Merge existing user data with new data
         fs.writeFileSync(reservationDataPath, JSON.stringify(data, null, 2));
         res.json({ message: 'Reservation updated successfully' });
+    } else {
+        res.status(404).json({ error: 'Reservation not found' });
+    }
+});
+
+// Delete a specific reservation by ID
+app.delete('/reservations/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(reservationDataPath, 'utf8'));
+    const reservationIndex = data.reservations.findIndex(reservation => reservation.id === id);
+
+    if (reservationIndex !== -1) {
+        data.reservations.splice(reservationIndex, 1);
+        fs.writeFileSync(reservationDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'Reservation deleted successfully' });
     } else {
         res.status(404).json({ error: 'Reservation not found' });
     }
