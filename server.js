@@ -73,23 +73,30 @@ app.delete('/users/:id', (req, res) => {
 
 
 // Post APi's
-// Get all posts with the same date
-app.get('/posts/:date', (req, res) => {
-    const currentDate = req.params.date; // The unformatted date to match
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth() + 1; // Months are 0-based, so you need to add 1
-    const currentDay = currentDate.getDate();
-    const targetDate = `${currentYear}-${currentMonth}-${currentDay}`;  // The date to match
+// Get posts based on multiple criteria
+app.get('/posts', (req, res) => {
+    const { date, start, end } = req.query;
     const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
-    const postsWithSameDate = data.posts.filter(post => post.date === targetDate);
+    let filteredPosts = [...data.posts];
 
-    if (postsWithSameDate.length > 0) {
-        res.json(postsWithSameDate);
+    if (date) {
+        filteredPosts = filteredPosts.filter(post => post.startDate === date);
+    }
+
+    if (start) {
+        filteredPosts = filteredPosts.filter(post => post.startLocation === start);
+    }
+
+    if (end) {
+        filteredPosts = filteredPosts.filter(post => post.endLocation === end);
+    }
+
+    if (filteredPosts.length > 0) {
+        res.json(filteredPosts);
     } else {
-        res.status(404).json({ error: 'No posts with the specified date found' });
+        res.status(404).json({ error: 'No posts matching the specified criteria found' });
     }
 });
-///
 
 // Get all posts
 app.get('/posts', (req, res) => {
