@@ -73,6 +73,34 @@ app.post('/posts', (req, res) => {
     res.json(newPost);
 });
 
+// Get a specific post by ID
+app.get('/post/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
+    const post = data.posts.find(post => post.id === id);
+
+    if (post) {
+        res.json(post);
+    } else {
+        res.status(404).json({ error: 'User not found' });
+    }
+});
+
+// Update a specific user by ID
+app.put('/posts/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
+    const postIndex = data.posts.findIndex(post => post.id === id);
+
+    if (postIndex !== -1) {
+        data.posts[postIndex] = { ...data.posts[postIndex], ...req.body }; // Merge existing user data with new data
+        fs.writeFileSync(postDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'Post updated successfully' });
+    } else {
+        res.status(404).json({ error: 'Post not found' });
+    }
+});
+
 // Reservation API's
 // Get all reservations
 app.get('/reservations', (req, res) => {
@@ -88,6 +116,35 @@ app.post('/reservations', (req, res) => {
     data.reservations.push(newReservation);
     fs.writeFileSync(reservationDataPath, JSON.stringify(data, null, 2), 'utf8');
     res.json(newReservation);
+});
+
+
+// Get a specific reservation by ID
+app.get('/reservations/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(reservationDataPath, 'utf8'));
+    const reservation = data.reservations.find(reservation => reservation.id === id);
+
+    if (reservation) {
+        res.json(reservation);
+    } else {
+        res.status(404).json({ error: 'Reservation not found' });
+    }
+});
+
+// Update a specific user by ID
+app.put('/reservations/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(reservationDataPath, 'utf8'));
+    const reservationIndex = data.reservations.findIndex(reservation => reservation.id === id);
+
+    if (reservationIndex !== -1) {
+        data.reservations[reservationIndex] = { ...data.reservations[reservationIndex], ...req.body }; // Merge existing user data with new data
+        fs.writeFileSync(reservationDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'Reservation updated successfully' });
+    } else {
+        res.status(404).json({ error: 'Reservation not found' });
+    }
 });
 
 app.listen(port, () => {
