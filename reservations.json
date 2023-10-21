@@ -1,0 +1,32 @@
+{
+    "reservations": [
+      {
+        "id": 1,
+        "userId": 3,
+        "postId": 7,
+        "reservedSeats": 2,
+        "createdAt": "Nov 1 2023, 3:00"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "postId": 4,
+        "reservedSeats": 1,
+        "createdAt": "Nov 1 2023, 3:00"
+      },
+      {
+        "id": 3,
+        "userId": 1,
+        "postId": 2,
+        "reservedSeats": 1,
+        "createdAt": "Nov 1 2023, 3:00"
+      },
+      {
+        "id": 4,
+        "userId": 3,
+        "postId": 1,
+        "reservedSeats": 3,
+        "createdAt": "Nov 1 2023, 3:00"
+      }
+    ]
+}
