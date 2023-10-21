@@ -23,6 +23,11 @@ app.post('/users', (req, res) => {
     res.json(newUser);
 });
 
+app.get('/posts', (req, res) => {
+    const data = JSON.parse(fs.readFileSync(userDataPath, 'utf8'));
+    res.json(data.posts);
+});
+
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
