@@ -16,22 +16,22 @@
         "userId": 1,
         "type": "Driver",
         "startLocation": "Rexburg, ID",
-        "startDate": "2023-11-5",
+        "startDate": "2023-11-05",
         "startTime": "T17:00",
         "endLocation": "Helena, MT",
         "seatsAvailable": 1,
-        "createdAt": "2023-11-2T9:00"
+        "createdAt": "2023-11-02T09:00"
       },
       {
         "id": 3,
         "userId": 4,
         "type": "Rider",
         "startLocation": "Helena, MT",
-        "startDate": "2023-11-9",
-        "startTime": "T6:00",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
-        "createdAt": "2023-11-9T3:00"
+        "createdAt": "2023-11-09T03:00"
       },
       {
         "id": 4,
@@ -49,22 +49,22 @@
         "userId": 1,
         "type": "Driver",
         "startLocation": "Rexburg, ID",
-        "startDate": "2023-11-5",
+        "startDate": "2023-11-05",
         "startTime": "T17:00",
         "endLocation": "Helena, MT",
         "seatsAvailable": 1,
-        "createdAt": "2023-11-2T9:00"
+        "createdAt": "2023-11-02T09:00"
       },
       {
         "id": 6,
         "userId": 4,
         "type": "Rider",
         "startLocation": "Helena, MT",
-        "startDate": "2023-11-9",
-        "startTime": "T6:00",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
-        "createdAt": "2023-11-9T3:00"
+        "createdAt": "2023-11-09T03:00"
       },
       {
         "id": 7,
@@ -82,22 +82,22 @@
         "userId": 1,
         "type": "Driver",
         "startLocation": "Rexburg, ID",
-        "startDate": "2023-11-5",
+        "startDate": "2023-11-05",
         "startTime": "T17:00",
         "endLocation": "Helena, MT",
         "seatsAvailable": 1,
-        "createdAt": "2023-11-2T9:00"
+        "createdAt": "2023-11-02T09:00"
       },
       {
         "id": 9,
         "userId": 4,
         "type": "Rider",
         "startLocation": "Helena, MT",
-        "startDate": "2023-11-9",
-        "startTime": "T6:00",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
-        "createdAt": "2023-11-9T3:00"
+        "createdAt": "2023-11-09T03:00"
       },
       {
         "id": 10,
@@ -115,22 +115,22 @@
         "userId": 1,
         "type": "Driver",
         "startLocation": "Rexburg, ID",
-        "startDate": "2023-11-5",
+        "startDate": "2023-11-05",
         "startTime": "T17:00",
         "endLocation": "Helena, MT",
         "seatsAvailable": 1,
-        "createdAt": "2023-11-2T9:00"
+        "createdAt": "2023-11-02T09:00"
       },
       {
         "id": 12,
         "userId": 4,
         "type": "Rider",
         "startLocation": "Helena, MT",
-        "startDate": "2023-11-9",
-        "startTime": "T6:00",
+        "startDate": "2023-11-09",
+        "startTime": "T06:00",
         "endLocation": "Rexburg, ID",
         "seatsAvailable": null,
-        "createdAt": "2023-11-9T3:00"
+        "createdAt": "2023-11-09T03:00"
       }
     ]
 }
