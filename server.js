@@ -56,6 +56,21 @@ app.put('/users/:id', (req, res) => {
     }
 });
 
+// Delete a specific user by ID
+app.delete('/users/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(userDataPath, 'utf8'));
+    const userIndex = data.users.findIndex(user => user.id === id);
+
+    if (userIndex !== -1) {
+        data.users.splice(userIndex, 1);
+        fs.writeFileSync(userDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'User deleted successfully' });
+    } else {
+        res.status(404).json({ error: 'User not found' });
+    }
+});
+
 // Post APi's
 // Get all posts
 app.get('/posts', (req, res) => {
