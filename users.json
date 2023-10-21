@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "firstName": "Logan",
+      "lastName": "Huston",
+      "email": "logan@gmail.com",
+      "password": "password",
+      "username": null
+    },
+    {
+      "firstName": "Rai",
+      "lastName": "Katsuragawa",
+      "email": "rai@gmail.com",
+      "password": "password",
+      "username": null
+    },
+    {
+      "firstName": "Kirsten",
+      "lastName": "Beard",
+      "email": "kirsten@gmail.com",
+      "password": "password",
+      "username": null
+    },
+    {
+      "firstName": "Brandon",
+      "lastName": "Lisonbee",
+      "email": "blisonbee213596@gmail.com",
+      "password": "password",
+      "username": null,
+      "id": 5
+    },
+    {
+      "firstName": "Logan",
+      "lastName": "Huston",
+      "email": "test@gmail.com",
+      "password": "password",
+      "username": null,
+      "id": 6
+    }
+  ]
+}
