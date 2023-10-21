@@ -28,6 +28,34 @@ app.post('/users', (req, res) => {
     res.json(newUser);
 });
 
+// Get a specific user by ID
+app.get('/users/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(userDataPath, 'utf8'));
+    const user = data.users.find(user => user.id === id);
+
+    if (user) {
+        res.json(user);
+    } else {
+        res.status(404).json({ error: 'User not found' });
+    }
+});
+
+// Update a specific user by ID
+app.put('/users/:id', (req, res) => {
+    const id = req.params.id;
+    const data = JSON.parse(fs.readFileSync(userDataPath, 'utf8'));
+    const userIndex = data.users.findIndex(user => user.id === id);
+
+    if (userIndex !== -1) {
+        data.users[userIndex] = { ...data.users[userIndex], ...req.body }; // Merge existing user data with new data
+        fs.writeFileSync(userDataPath, JSON.stringify(data, null, 2));
+        res.json({ message: 'User updated successfully' });
+    } else {
+        res.status(404).json({ error: 'User not found' });
+    }
+});
+
 // Post APi's
 // Get all posts
 app.get('/posts', (req, res) => {
