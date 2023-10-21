@@ -73,6 +73,24 @@ app.delete('/users/:id', (req, res) => {
 
 
 // Post APi's
+// Get all posts with the same date
+app.get('/posts/:date', (req, res) => {
+    const currentDate = req.params.date; // The unformatted date to match
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1; // Months are 0-based, so you need to add 1
+    const currentDay = currentDate.getDate();
+    const targetDate = `${currentYear}-${currentMonth}-${currentDay}`;  // The date to match
+    const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
+    const postsWithSameDate = data.posts.filter(post => post.date === targetDate);
+
+    if (postsWithSameDate.length > 0) {
+        res.json(postsWithSameDate);
+    } else {
+        res.status(404).json({ error: 'No posts with the specified date found' });
+    }
+});
+///
+
 // Get all posts
 app.get('/posts', (req, res) => {
     const data = JSON.parse(fs.readFileSync(postDataPath, 'utf8'));
