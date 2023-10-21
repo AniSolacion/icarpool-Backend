@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = process.emv.PORT || 3000;
 const userDataPath = 'users.json';
 
 app.use(cors());

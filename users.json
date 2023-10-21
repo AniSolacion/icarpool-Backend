@@ -5,21 +5,24 @@
       "lastName": "Huston",
       "email": "logan@gmail.com",
       "password": "password",
-      "username": null
+      "username": null,
+      "id": 1
     },
     {
       "firstName": "Rai",
       "lastName": "Katsuragawa",
       "email": "rai@gmail.com",
       "password": "password",
-      "username": null
+      "username": null,
+      "id": 2
     },
     {
       "firstName": "Kirsten",
       "lastName": "Beard",
       "email": "kirsten@gmail.com",
       "password": "password",
-      "username": null
+      "username": null,
+      "id": 3
     },
     {
       "firstName": "Brandon",
@@ -27,7 +30,7 @@
       "email": "blisonbee213596@gmail.com",
       "password": "password",
       "username": null,
-      "id": 5
+      "id": 4
     },
     {
       "firstName": "Logan",
@@ -35,7 +38,7 @@
       "email": "test@gmail.com",
       "password": "password",
       "username": null,
-      "id": 6
+      "id": 5
     }
   ]
 }
